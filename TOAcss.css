@@ -1,0 +1,406 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	margin: 0;
+	width: 100%;
+	font-family: Sitka;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+/*Custom Highlight Selector*/
+::selection {
+  color: white;
+  background: #bd4545;
+}
+
+header {
+	position: relative;
+	background-image: url("https://picsum.photos/1900/1080?random");
+	
+	padding-bottom: 220px;
+	/* Ensure good background image formating */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* Begin Parallax effect! */
+	background-attachment: fixed;
+	/* Drop shadow effect*/
+	box-shadow: 0 5px 25px grey;
+}
+
+h3 {
+	color: white;
+	font-size: 23.46px;
+	padding: 15px;
+	margin: 35px;
+}
+
+
+.logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 5%;
+	position: relative;
+}
+
+/*Just Navigation Things*/
+nav {
+	text-align: center;
+	margin-top: 1.2%;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+  	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+#active {
+	color: gray;
+}
+
+li a {
+	color: black;
+	font-size: 30.58px;
+}
+
+li a:hover {
+	color: #bd4545;
+}
+
+/*---What is Time Out Acres---*/
+main .dark-section {
+	text-align: center;
+	background-color: #2e343d; 
+	color: white;
+	height: 532px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.dark-section h1 {
+	font-size: 41.67px;
+	margin-top: 5%;
+	margin-bottom: .5%;
+}
+.dark-section hr {
+	width: 497px;
+	height: 1px;
+	background-color: #f18a3f;
+	border-color: #f18a3f;
+	margin-bottom: 1%;
+}
+.dark-section p {
+	width: 403px;
+	font-size: 27.78px;
+	margin: auto;
+	padding-bottom: 115px;
+}
+
+/* Meet the trainers */
+h2, #meet {
+	color: #23262b;
+	font-size: 41.67px;
+	text-align: center;
+	margin: 1%;
+	padding-top: 60px;
+}
+.light-section hr {
+	width: 597px;
+	height: 2px;
+	background-color: #f18a3f;
+	border: none;
+}
+
+.trainer {
+	display: flex;
+	flex-flow: nowrap;
+    justify-content: space-around;
+	padding: 0;
+	margin: 3% 2% 6% 2%;
+}
+
+.circle {
+	width: 255px;
+	height: 255px;
+	border-radius: 50%;
+	background-color: #bd4545;
+	object-fit: cover;
+	float: left;
+	margin-right: 15px;
+	/*Had to find this little gem on the internet to wrap the text <3 good job Ravin!*/
+	shape-outside: circle(50%);
+}
+
+.trainer h3 {
+	font-family: Algerian;
+	font-size: 36.11px;
+	font-weight: 400;
+	color: black;
+}
+
+.trainer p {
+	font-size: 27.78px;
+	text-align: justify;
+
+}
+
+.cathy, .chase {
+	margin: 0 5% 0 5%;
+}
+
+/*-- ALL HAIL Paralax THE GREAT --*/
+.parallax1 {
+	position: relative;
+	background-image: url("https://picsum.photos/1900/1080?random");
+	
+	padding-bottom: 350px;
+	/* Ensure good background image formating */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* Begin Parallax effect! */
+	background-attachment: fixed;
+	/* Drop shadow effect*/
+	box-shadow: 0 5px 25px black;
+	z-index: 100;
+}
+
+.parallax2 {
+	position: relative;
+	background-image: url("https://picsum.photos/1900/1080?random");
+	
+	padding-bottom: 350px;
+	/* Ensure good background image formating */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* Begin Parallax effect! */
+	background-attachment: fixed;
+	/* Drop shadow effect*/
+	box-shadow: 0 5px 25px black;
+	z-index: 100;
+}
+
+/*-- Let's Get in Touch! --*/
+.light-section p {
+	font-size: 20px;
+	text-align: center;
+	margin: auto;
+}
+
+/*-- Just form things --*/
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 3% 20%;	
+	font-size: 18px;
+}
+
+label {
+	margin-bottom: -10px;
+}
+
+input {
+	border: 2px solid #f18a3f;
+	border-radius: 4px;
+	background-color: #f8f7ff;
+	height: 28px;
+	padding-left: 10px;
+}
+
+#pnum {
+	width: 50px;
+}
+
+#file {
+	background-color: transparent;
+	border: none;
+	margin: 1%;
+}
+
+.check {
+	display: inline-flex;
+	justify-content: flex-start;
+	padding-bottom: 30px;
+}
+
+.check input {
+	margin: 0 15px;
+}
+
+.check label {
+	padding-top: 3px;
+	margin-right: 45px;
+}
+
+button {
+	margin: auto;
+	color: white;
+	border-radius: 4px;
+	border: none;
+	background-color: #f18a3f;
+	width: 130px;
+	height: 50px;
+	transition-duration: 0.4s;
+}
+
+#submit:hover {
+	transform: scale(1.2);
+	box-shadow: 0 10px 10px 1px #888888;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border: 2px solid #f18a3f;
+	background-color: #f8f7ff;
+ 	border-radius: 4px;
+	resize: none;
+}
+
+/*-- success --*/
+.giffy {
+	display: block;
+	margin: 40px auto;
+}
+
+
+/* Footies */
+footer {
+	background-color: #2e343d; 
+	color: white;
+}
+
+.footerinfo {
+	display: flex;
+	flex-flow: nowrap;
+	justify-content: space-around;
+}
+
+.contact, .find {
+	margin: auto;
+	font-size: 20px;
+}
+
+footer h4 {
+	font-size: 28px;
+	margin: 0;
+	padding: 0 0 0 15px;
+}
+
+.under {
+	padding-left: 35px;
+	margin-top: -10px;
+}
+
+.under p a{
+	text-decoration: none;
+	color: white;
+}
+
+.under a:hover {
+	color: #bd4545;
+}
+
+.under img{
+	padding-right: 25px;
+}
+
+.footerinfo hr {
+	width: 312px;
+	height: 2px;
+	background-color: #f18a3f;
+	border: none;
+	min-width: 20%;
+	margin-bottom: 30px;
+}
+
+footer .copyright {
+/*	text-align: center;*/
+	color: #8a7c80;
+	font-size: 20px;
+/*	padding: 15px;*/
+}
+
+#bottomhr {
+	background-color: #8a7c80;
+	height: 2px;
+	border: none;
+	width: 100%;
+	margin-top: 60px;
+}
+
+.copyright {
+	display: flex;
+	flex-flow: row wrap;
+  	justify-content: space-around;
+}
+
+/*Media Queries*/
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+	and (orientation: portrait) { 
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
+
+/* ----------- iPhone X ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+}
