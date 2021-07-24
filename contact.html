@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Time Out Acres: Dog Training, Day Play, and Boarding Services</title>
+	<meta name="author" content="Ravin Io">
+	<meta name="description" content="Find the help you are looking for with your furry best friend, whether that is training some new habits, boarding for the long weekend, or just looking for some puppy socialization!">
+	<link rel="shortcut icon" type="image/png" href="paw-print-favicon.png">
+	<link rel="stylesheet" href="TOAcss.css">
+</head>
+	
+<body>
+	<header class="head">
+		<div class="logo">
+			<h3>Dog Training</h3>
+			<h3>Day Play</h3>
+			<img src="Sadie.png" alt="Time Out Acres Logo with an outline of a doberman over a line with est. and 2020 on either side of the doberman above the name Time Out Acres">
+			<h3>Premier Boarding Services</h3>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="home.html#meet">Meet the Trainers</a></li>
+			<li><a id="active" href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section class="light-section">
+			<h2 id="meet">Lets get in touch!</h2>
+			<hr>
+			<p>Fill out the form below to if you would like to know more about our rates and availability. <br> One of our trainers will get into contact with you shortly.</p>
+		</section>
+		
+		<form method="POST" data-netlify="true" netlify-honeypot="bot-field" action="success.html">
+			<div hidden aria-hidden="true">
+				<label>
+					Don’t fill this out if you're human: 
+					<input name="bot-field" />
+				</label>
+			</div>
+			
+			<label for="fname">Full name:</label><br>
+  			<input type="text" id="fname" name="fname" required><br>
+			
+  			<label for="phone">Phone:</label><br>
+  			<input type="text" id="phone" name="phone" required><br>
+			
+			<label for="email">Email:</label><br>
+  			<input type="text" id="email" name="email" required><br>
+			
+			<label for="pnum">Number of pets:</label><br>
+			<input type="number" id="pnum" name="pnum" min="1" max="15" required><br>
+			
+			<label for="pname">Name of Pet/pets:</label><br>
+  			<input type="text" id="pname" name="pname" required><br>
+			
+			<label>Pet's Vaccination Records:</label><br>
+			<input type="file" id="file" name="records" />
+			
+			<label>What Service/services:</label><br>		
+			<span class="check">
+				<input type="checkbox" id="train" value="Training">
+				<label for="train">Training</label>		
+				<input type="checkbox" id="board" value="Boarding">
+				<label for="board">Boarding</label>
+				<input type="checkbox" id="play" value="Day Play">
+				<label for="play">Day Play</label>
+			</span>	
+			
+			<label for="comm">Anthing else we should know:</label><br>		
+			<textarea id="comm" name="comm">Enter text here...</textarea><br>
+			
+			<button type="submit" id="submit">Submit</button>
+		</form>
+	</main>
+
+	<footer>
+		<div class="footerinfo">	
+			<section class="contact">	
+				<h4>Contact Us!</h4>
+
+				<hr>
+
+				<div class="under">
+					<p><a href="mailto:timeoutacres@gmail.com">Email: timeoutacres@gmail.com</a></p>
+					<p>Phone: (012)345-6789</p>
+				</div>
+			</section>
+
+			<div class="logo">
+				<img src="Sadie.png" alt="Time Out Acres Logo with an outline of a doberman over a line with est. and 2020 on either side of the doberman above the name Time Out Acres">
+			</div>
+
+			<section class="find">
+				<h4>Find Us!</h4>
+
+				<hr>
+
+				<div class="under">
+					<img src="Facebook.png" alt="White outline of Facebook icon"><img src="Twitter.png" alt="White outline of Twitter icon"><img src="Instagram.png" alt="White outline of Instagram Icon">
+				</div>
+			</section>
+		</div>
+
+		<hr id="bottomhr">
+
+	  <div class="copyright">				
+			<p>Copyright 2021</p><p>Website designed by Ravin Io</p>
+		</div>
+	</footer>
+</body>
+	
+</html>
+
